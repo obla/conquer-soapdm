@@ -4,10 +4,10 @@
 #include <morecolors>
 
 public Plugin:myinfo = {
-	name = "nKH! DM Statistics",
+	name = "Conquer DM Statistics",
 	author = "da_apple",
-	description = "11.4g of sugar, per 30g of fruit loops",
-	url = "http://steamcommunity.com/groups/nokidshere",
+	description = "DM Statistics",
+	url = "https://steamcommunity.com/groups/conquerservers",
 	version="6.9"
 }
 /*
@@ -190,7 +190,7 @@ align(String:inputString[64]){
 }
 showMenu(client){
 	new Handle:menu = CreateMenu(soapstats_menuHandler);
-	SetMenuTitle(menu,"nKH! Statistics");
+	SetMenuTitle(menu,"Conquer Statistics");
 
 
 

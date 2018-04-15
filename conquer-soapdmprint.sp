@@ -12,18 +12,18 @@ public Action:Event_player_death(Handle:event,String:name[],bool:Broadcast){
 	attacker = GetClientOfUserId(GetEventInt(event,"attacker"));
 	assister = GetEventInt(event,"assister");
 	if(attacker != victim){
-		CPrintToChat(victim,"{strange}[nKH!] {white}Your attacker had {community}%i{white} health remaining.",GetClientHealth(attacker));
+		CPrintToChat(victim,"{arcana}[Conquer] {white}Your attacker had {community}%i{white} health remaining.",GetClientHealth(attacker));
 	}
 	
 	if(assister > -1){
-		CPrintToChat(victim,"{strange}[nKH!] {white}Their assister had {community}%i{white} health remaining.",GetClientHealth(GetClientOfUserId(assister)));
+		CPrintToChat(victim,"{arcana}[Conquer] {white}Their assister had {community}%i{white} health remaining.",GetClientHealth(GetClientOfUserId(assister)));
 	}
 
 }
 public Plugin:myinfo = {
-	name = "nKH! Health remaining",
+	name = "Conquer DM Health remaining",
 	author = "da_apple",
-	description = "\"wiggin\" request",
-	url = "http://steamcommunity.com/groups/nokidshere",
+	description = "DM Health remaining",
+	url = "https://steamcommunity.com/groups/conquerservers",
 	version="1.0"
 }
